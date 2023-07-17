@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<html> 
   <meta charset="UTF-8" />
 
   <style>
     @import url("https://www.idea.int/sites/all/themes/idea/css/custom.css?ru0t0c");
   </style>
+  
   <script>
     const inputs = [
       { id: "searchTitle", className: "title", checkbox: false },
@@ -22,8 +22,8 @@
     ];
 
     function filter(colName, matchingText) {
-      var table, tr, td, i, txtValue;
-      table = document.getElementById("myTable");
+      let table, tr, td, i;
+      table = document.getElementById("table");
       tr = table.getElementsByTagName("tr");
       for (i = 1; i < tr.length; i++) {
         tr[i].style.display = "";
@@ -57,13 +57,15 @@
       text-decoration: none;
     }
 
+ 
     a:hover {
       text-decoration: underline;
     }
 
-    table {
-      table-layout: fixed;
-      width: 100%;
+
+    .data { 
+        height: 800px;
+        overflow: scroll;
     }
 
     td {
@@ -118,9 +120,17 @@
       border: none;
       cursor: pointer;
     }
+
+
   </style>
 
+
   <body>
+
+<h1>Protecting Elections Toolkit</h1>
+<p>This database lists resources related to protecting elections.</p>
+
+
     <div class="control-panel">
       <div class="control">
         <label for="searchTitle">Search for Title:</label>
@@ -209,8 +219,8 @@
     </div>
 
     <button onclick="filter()">Filter</button>
-
-    <table id="myTable">
+    <div class="data">
+    <table id="table">
       <thead>
         <th>Title</th>
         <th>Author</th>
@@ -226,7 +236,7 @@
       </thead>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="abuse_of_state_resources_research_and_assessment_framework_guidelines_for_the_democracy_and_governance_community_of_practice.pdf (ifes.org)"
             target="_blank"
@@ -248,7 +258,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/Democracy_and_the_Challenge_of_Change"
             target="_blank"
@@ -269,7 +279,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cambridge.org/core/journals/journal-of-african-law/article/electoral-governance-and-human-rights-amid-pandemics-in-africa-key-lessons-from-the-early-covid19-experience/C366AA485E9A50C06D391E4FAD6CB308"
             target="_blank"
@@ -291,7 +301,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/equal-access-how-include-persons-disabilities-elections-and-political-processes"
             target="_blank"
@@ -312,7 +322,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="/https://2017-2020.usaid.gov/sites/default/files/documents/2496/Gender%20Toolkit.pdf"
             target="_blank"
@@ -333,7 +343,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.tandfonline.com/doi/abs/10.1080/19392206.2021.2009655"
             target="_blank"
@@ -357,7 +367,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://doi.org/10.1080/13669877.2020.1765003"
             target="_blank"
@@ -378,7 +388,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.sagepub.com/doi/10.1177/14789299221148429"
             target="_blank"
@@ -399,7 +409,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.coe.int/en/web/electoral-management-bodies-conference/concept-paper-2021"
             target="_blank"
@@ -420,7 +430,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/framework-developing-internal-gender-policies-electoral-management-bodies?lang=en "
             target="_blank"
@@ -441,7 +451,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.kofiannanfoundation.org/electoral-integrity/justice-electoral-integrity-initiative/ "
             target="_blank"
@@ -462,7 +472,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://aceproject.org/ace-en/topics/vo/vog/vog02/vog02f"
             target="_blank"
@@ -483,7 +493,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://aceproject.org/ace-en/topics/vo/vog/vog02/vog02f"
             target="_blank"
@@ -504,7 +514,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://aceproject.org/main/english/po/poh02f.htm"
             target="_blank"
@@ -525,7 +535,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/adoption-voting-technology-guide-electoral-stakeholders-indonesia "
             target="_blank"
@@ -546,7 +556,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://parlicentre.org/courses/election-security-cyber-training"
             target="_blank"
@@ -567,7 +577,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.osce.org/odihr/elections/466794 " target="_blank"
             >Alternative voting methods and arrangements
             <i class="fa fa-external-link"></i
@@ -586,7 +596,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/sites/default/files/tools/Overview-Electoral-Risk-Management-Tool.pdf"
             target="_blank"
@@ -607,7 +617,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://2017-2020.usaid.gov/sites/default/files/documents/1866/DI%20Assessing%20and%20Verifying%20Election%20Results%20Summary%20Document%20-%20FINAL%20PDF%20%28without%20bleeds%29%20%285-19-15%29.pdf"
             target="_blank"
@@ -629,7 +639,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/assessing-electoral-fraud-new-democracies-basic-conceptual-framework "
             target="_blank"
@@ -650,7 +660,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Best Practices In Electoral Security (creativeassociatesinternational.com)"
             target="_blank"
@@ -671,7 +681,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://pdf.usaid.gov/pdf_docs/PA00ZK6G.pdf " target="_blank"
             >Briefing Paper: Cybersecurity and Voter Registration
             <i class="fa fa-external-link"></i
@@ -690,7 +700,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.sagepub.com/doi/full/10.1177/0192512119834573"
             target="_blank"
@@ -712,7 +722,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.tandfonline.com/doi/abs/10.1080/01442872.2021.1883576"
             target="_blank"
@@ -733,7 +743,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.eac.gov/sites/default/files/bestpractices/Chain_of_Custody_Best_Practices.pdf"
             target="_blank"
@@ -753,7 +763,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cambridge.org/core/journals/government-and-opposition/article/abs/challenge-or-consent-understanding-losers-reactions-in-mass-elections/371A00D4160C0DD4126AA69024C7F0E0"
             target="_blank"
@@ -774,7 +784,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/document/chapter-4-emb-risk-mitigation-across-electoral-process"
             target="_blank"
@@ -795,7 +805,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.eac.gov/election-officials/election-security-preparedness"
             target="_blank"
@@ -815,7 +825,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="www.cisa.gov/critical-infrastructure-exercises"
             target="_blank"
@@ -835,7 +845,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="tripwire.dhs.gov/training-education/counter-ied-training-0"
             target="_blank"
@@ -856,7 +866,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://doi.org/10.1016/j.electstud.2021.102421"
             target="_blank"
@@ -877,7 +887,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.routledge.com/Comparative-Electoral-Management-Performance-Networks-and-Instruments/James/p/book/9781032086422"
             target="_blank"
@@ -898,7 +908,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.sagepub.com/doi/abs/10.1177/0192512119829869"
             target="_blank"
@@ -919,7 +929,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.kofiannanfoundation.org/supporting-democracy-and-elections-with-integrity/confidence-elections/ "
             target="_blank"
@@ -940,7 +950,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/Publications/corporate-plan/files/2022/2022-corporate-plan.pdf"
             target="_blank"
@@ -960,7 +970,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/Publications/corporate-plan/files/2022/2022-corporate-plan.pdf"
             target="_blank"
@@ -980,7 +990,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/countering-hate-speech-elections-strategies-electoral-management-bodies "
             target="_blank"
@@ -1001,7 +1011,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="file:///C:/Users/JuliaThalin/Zotero/storage/BCSQMHAB/elearning.ec-undp-electoralassistance.org.html"
             target="_blank"
@@ -1022,7 +1032,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="http://doi.org/10.1089/elj.2020.0633" target="_blank"
             >Cyber elections in the digital age: Threats and opportunities of
             technology for electoral integrity’
@@ -1042,7 +1052,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="2018_heat_cybersecurity_in_elections.pdf (ifes.org)"
             target="_blank"
@@ -1064,7 +1074,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/conducting-secure-elections-amid-a-pandemic"
             target="_blank"
@@ -1086,7 +1096,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.techandciviclife.org/course/cybersecurity/"
             target="_blank"
@@ -1107,7 +1117,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/cybersecurity-in-elections "
             target="_blank"
@@ -1128,7 +1138,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cisa.gov/cybersecurity-toolkit-and-resources-protect-elections"
             target="_blank"
@@ -1149,7 +1159,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.kofiannanfoundation.org/electoral-integrity/deepening-democracy-summary/ "
             target="_blank"
@@ -1170,7 +1180,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.kofiannanfoundation.org/electoral-integrity/deepening-democracy-summary/ "
             target="_blank"
@@ -1191,7 +1201,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.kofiannanfoundation.org/electoral-integrity/deepening-democracy-summary/ "
             target="_blank"
@@ -1212,7 +1222,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://books.google.se/books?hl=en&lr=&id=cWkDAAAAQBAJ&oi=fnd&pg=PP1&ots=2eQpWPS_ZF&sig=bct-SgbD7s2SzQQpG1q9nhm9IK0&redir_esc=y#v=onepage&q&f=false"
             target="_blank"
@@ -1233,7 +1243,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/deterring-threats-to-election-workers"
             target="_blank"
@@ -1255,7 +1265,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.sciencedirect.com/science/article/pii/S0261379417302792?via%3Dihub"
             target="_blank"
@@ -1278,7 +1288,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/sites/default/files/Disinformation%20and%20Electoral%20Integrity_NDI_External_Updated%20May%202019%20%281%29.pdf  "
             target="_blank"
@@ -1299,7 +1309,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/disinformation-campaigns-and-hate-speech-exploring-relationship-and-programming"
             target="_blank"
@@ -1321,7 +1331,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3783893"
             target="_blank"
@@ -1343,7 +1353,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.eces.eu/en/eea-training" target="_blank"
             >Effective Electoral Assistance (EEA)
             <i class="fa fa-external-link"></i
@@ -1362,7 +1372,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/election-access-observation-toolkit"
             target="_blank"
@@ -1383,7 +1393,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.sciencedirect.com/science/article/abs/pii/S0261379415000062"
             target="_blank"
@@ -1406,7 +1416,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cisa.gov/sites/default/files/publications/cisa-election-infrastructure-cyber-risk-assessment_508.pdf"
             target="_blank"
@@ -1430,7 +1440,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.kaiptc.org/kaiptc-course/emt20/ " target="_blank"
             >Election Management Training Course (EMT 20)
             <i class="fa fa-external-link"></i
@@ -1449,7 +1459,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.kaiptc.org/kaiptc-course/emt20/ " target="_blank"
             >Election Management Training Course (EMT 20)
             <i class="fa fa-external-link"></i
@@ -1468,7 +1478,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://muse.jhu.edu/article/200105" target="_blank"
             >Election Rigging and How to Fight It
             <i class="fa fa-external-link"></i
@@ -1487,7 +1497,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://books.google.se/books?hl=en&lr=&id=HeUyo5RcI7wC&oi=fnd&pg=PP1&ots=n0sb3Alprl&sig=iHevdJVw_GSrVvCv0RJSQrY8qDQ&redir_esc=y#v=onepage&q&f=false"
             target="_blank"
@@ -1510,7 +1520,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.undp.org/publications/elections-and-conflict-prevention-guide"
             target="_blank"
@@ -1531,7 +1541,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/elections-and-covid-19"
             target="_blank"
@@ -1551,7 +1561,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/elections-during-emergencies-and-crises?lang=en"
             target="_blank"
@@ -1573,7 +1583,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/elections-trial-effective-management-election-disputes-and-violations"
             target="_blank"
@@ -1594,7 +1604,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/news/elections-worth-dying-selection-case-studies-africa"
             target="_blank"
@@ -1615,7 +1625,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.dropbox.com/sh/lmpu9zy2s4sfa7y/AABgc87YoAnvWFWkzFcJL7dja?dl=0&preview=Garnett-James+Electoral+Backsliding+v1.00.pdf"
             target="_blank"
@@ -1636,7 +1646,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/electoral-crisis-mediation-responding-rare-recurring-challenge?lang=en "
             target="_blank"
@@ -1657,7 +1667,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.researchgate.net/publication/228913438_Electoral_Fraud_Causes_Types_and_Consequences"
             target="_blank"
@@ -1678,7 +1688,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://doi-org.uea.idm.oclc.org/10.1093/oxfordhb/9780198825081.013.5"
             target="_blank"
@@ -1698,7 +1708,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.elections.ca/content.aspx?section=abo&dir=fra&document=index&lang=e"
             target="_blank"
@@ -1718,7 +1728,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="" target="_blank"
             >Electoral Integrity Global Report
             <i class="fa fa-external-link"></i
@@ -1737,7 +1747,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.electoralintegrityproject.com/reports"
             target="_blank"
@@ -1758,7 +1768,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.electoralintegrityproject.com/electoral-integrity-in-africa"
             target="_blank"
@@ -1778,7 +1788,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/files/electoral-integrity-reputation-management-strategy-2021.pdf"
             target="_blank"
@@ -1799,7 +1809,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/files/electoral-integrity-reputation-management-strategy-2021.pdf"
             target="_blank"
@@ -1820,7 +1830,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/files/electoral-integrity-reputation-management-strategy-2021.pdf"
             target="_blank"
@@ -1841,7 +1851,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/files/electoral-integrity-reputation-management-strategy-2021.pdf"
             target="_blank"
@@ -1862,7 +1872,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.aec.gov.au/About_AEC/files/electoral-integrity-reputation-management-strategy-2021.pdf"
             target="_blank"
@@ -1883,7 +1893,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/electoral-justice-system-assessment-guide "
             target="_blank"
@@ -1904,7 +1914,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Electoral Malpractice - Sarah Birch - Google Books"
             target="_blank"
@@ -1924,7 +1934,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="Expert survey report (aceproject.org)" target="_blank"
             >Electoral Malpractice Primer: Insights and Priorities
             <i class="fa fa-external-link"></i
@@ -1943,7 +1953,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.sagepub.com/doi/full/10.1177/0192512119828206"
             target="_blank"
@@ -1966,7 +1976,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/electoral-management-design-revised-edition?lang=en"
             target="_blank"
@@ -1987,7 +1997,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/gsod-2021/sites/default/files/2021-11/electoral-processes-gsod2021.pdf "
             target="_blank"
@@ -2008,7 +2018,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/data-tools/tools/electoral-risk-management-tool"
             target="_blank"
@@ -2028,7 +2038,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/electoral-risk-management-tool-external-factors-guide"
             target="_blank"
@@ -2049,7 +2059,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/electoral-risk-management-tool-internal-factors-guide  "
             target="_blank"
@@ -2070,7 +2080,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://pdf.usaid.gov/pdf_docs/PNAEA453.pdf" target="_blank"
             >Electoral Security Framework <i class="fa fa-external-link"></i
           ></a>
@@ -2088,7 +2098,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/electoral-system-design-new-international-idea-handbook"
             target="_blank"
@@ -2108,7 +2118,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.sagepub.com/doi/abs/10.1177/0010414006292886?journalCode=cpsa"
             target="_blank"
@@ -2129,7 +2139,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Electoral violence and the legacy of authoritarian rule in Kenya and Zambia - Johan Brosché, Hanne Fjelde, Kristine Höglund, 2020 (sagepub.com)"
             target="_blank"
@@ -2152,7 +2162,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://doi.org/10.1080/15423166.2013.767592" target="_blank"
             >Electoral violence early warning and infrastructures for peace’
             <i class="fa fa-external-link"></i
@@ -2171,7 +2181,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Electoral Violence in Conflict-Ridden Societies: Concepts, Causes, and Consequences: Terrorism and Political Violence: Vol 21, No 3 (tandfonline.com)"
             target="_blank"
@@ -2192,7 +2202,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.rienner.com/title/Electoral_Violence_in_Sub_Saharan_Africa_Causes_and_Consequences"
             target="_blank"
@@ -2213,7 +2223,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.iri.org/resources/electoral-violence-mitigation-toolkit-evidence-from-sub-saharan-africa/ "
             target="_blank"
@@ -2234,7 +2244,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.tandfonline.com/doi/full/10.1080/13510347.2017.1365841 "
             target="_blank"
@@ -2255,7 +2265,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.sagepub.com/doi/full/10.1177/0022343319889657"
             target="_blank"
@@ -2276,7 +2286,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://books.google.se/books?hl=en&lr=&id=OOhhIGSca7gC&oi=fnd&pg=PP1&ots=c6XXGTWok2&sig=VCaD1jmlJBY64JB410klzOpbj8U&redir_esc=y#v=onepage&q&f=false"
             target="_blank"
@@ -2297,7 +2307,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/enhancing-the-security-of-electronic-pollbooks-is-essential-for-election-integrity"
             target="_blank"
@@ -2318,7 +2328,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://elearning.ec-undp-electoralassistance.org/"
             target="_blank"
@@ -2339,7 +2349,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/ensuring-safe-elections-federal-funding-needs-for-state-and-local-governments-during-the-pandemic"
             target="_blank"
@@ -2360,7 +2370,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.jstor.org/stable/26956792" target="_blank"
             >Evaluating election management body capacity
             <i class="fa fa-external-link"></i
@@ -2379,7 +2389,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://doi.org/10.1177/1369148117715222" target="_blank"
             >Explaining electoral fraud in an advanced democracy: Fraud
             vulnerabilities, opportunities and facilitating mechanisms in
@@ -2401,7 +2411,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://doi.org/10.1177/0022343316642508" target="_blank"
             >Free and fair elections: A new database
             <i class="fa fa-external-link"></i
@@ -2420,7 +2430,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="" target="_blank"
             >Gender and elections <i class="fa fa-external-link"></i
           ></a>
@@ -2438,7 +2448,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://tupress.temple.edu/books/gender-and-violence-against-political-actors"
             target="_blank"
@@ -2459,7 +2469,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://fba.se/om-fba/publikationer/gender-assessment-of-the-2021-electoral-process-in-puntland/"
             target="_blank"
@@ -2480,7 +2490,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/gender-equality-election-management-bodies-best-practices-guide#"
             target="_blank"
@@ -2501,7 +2511,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://stabilityjournal.org/articles/10.5334/sta.cs"
             target="_blank"
@@ -2522,7 +2532,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://ejpr.onlinelibrary.wiley.com/doi/full/10.1111/1475-6765.12189"
             target="_blank"
@@ -2544,7 +2554,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/guide-risk-factors-elections-g5-sahel-region-internal-factors "
             target="_blank"
@@ -2565,7 +2575,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="" target="_blank"
             >Guide_mise_en_oeuvre_GIR (1) <i class="fa fa-external-link"></i
           ></a>
@@ -2583,7 +2593,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/guidelines-understanding-adjudicating-and-resolving-disputes-elections-guarde "
             target="_blank"
@@ -2604,7 +2614,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.osce.org/odihr/elections/68439" target="_blank"
             >Handbook on Election Observation: 6th Edition (2010)
             <i class="fa fa-external-link"></i
@@ -2623,7 +2633,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cartercenter.org/resources/pdfs/peace/democracy/des/Carter-Center-E_voting-Handbook.pdf"
             target="_blank"
@@ -2644,7 +2654,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0261016"
             target="_blank"
@@ -2669,7 +2679,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/publications/how-citizen-organizations-can-monitor-abuse-states-resources-elections-ndi-guidance"
             target="_blank"
@@ -2691,7 +2701,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="http://www.sciencedirect.com/science/article/pii/S0261379416303559"
             target="_blank"
@@ -2714,7 +2724,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/how-more-robust-election-observation-could-help-save-u-s-elections"
             target="_blank"
@@ -2735,7 +2745,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.thebritishacademy.ac.uk/publications/covid-19-how-to-hold-elections-safely-democratically-during-pandemic/"
             target="_blank"
@@ -2756,7 +2766,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/vetting-poll-workers"
             target="_blank"
@@ -2777,7 +2787,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cambridge.org/core/journals/european-political-science-review/article/identifying-the-determinants-of-electoral-integrityand-administration-in-advanced-democraciesthe-case-of-britain/4B51C001A3133DD2E7C81DF9DAE4E914"
             target="_blank"
@@ -2799,7 +2809,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/ifes-covid-19-briefing-series-legal-considerations-when-delaying-or-adapting-elections "
             target="_blank"
@@ -2820,7 +2830,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/ifes-covid-19-briefing-series-safeguarding-health-and-elections "
             target="_blank"
@@ -2841,7 +2851,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.ifes.org/iEXCEL" target="_blank"
             >IFES Executive Curriculum in Electoral Leadership (iEXCEL)
             <i class="fa fa-external-link"></i
@@ -2860,7 +2870,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/document/ifes-operational-planning-guidepdf "
             target="_blank"
@@ -2880,7 +2890,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/sites/default/files/Implementing_and_Overseeing_Electronic_Voting_and_Counting_Technologies.pdf "
             target="_blank"
@@ -2901,7 +2911,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.unwomen.org/en/digital-library/publications/2015/7/inclusive-electoral-processes"
             target="_blank"
@@ -2923,7 +2933,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Introducing a new tool to Predict Election-Related Violence - Kofi Annan Foundation"
             target="_blank"
@@ -2944,7 +2954,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/sites/default/files/publications/introducing-biometric-technology-in-elections-reissue.pdf"
             target="_blank"
@@ -2965,7 +2975,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="http://www.eods.eu/library/IDEA.Introducing-Electronic-Voting-Essential-Considerations.pdf"
             target="_blank"
@@ -2986,7 +2996,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Introducing the Deadly Electoral Conflict Dataset (DECO) - Hanne Fjelde, Kristine Höglund, 2022 (sagepub.com)"
             target="_blank"
@@ -3007,7 +3017,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.eces.eu/en/lead-training" target="_blank"
             >LEAD Training <i class="fa fa-external-link"></i
           ></a>
@@ -3025,7 +3035,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/leadership-crisis-ensuring-independence-ethics-and-resilience-electoral-process-0"
             target="_blank"
@@ -3046,7 +3056,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.cambridge.org/core/journals/politics-and-gender/article/making-gender-visible-in-election-violence-strategies-for-data-collection/BE1D388964BB2CBA760993F5844D1D6E"
             target="_blank"
@@ -3067,7 +3077,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/managing-elections-during-covid-19-pandemic-considerations-decision-makers?lang=en "
             target="_blank"
@@ -3088,7 +3098,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/master-electoral-policy-and-administration-overview-model-curriculum "
             target="_blank"
@@ -3109,7 +3119,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/master-electoral-policy-and-administration-overview-model-curriculum "
             target="_blank"
@@ -3130,7 +3140,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/master-electoral-policy-and-administration-overview-model-curriculum "
             target="_blank"
@@ -3151,7 +3161,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://admissions.tiss.edu/view/10/admissions/ma-admissions/masters-in-international-electoral-management-and-/"
             target="_blank"
@@ -3172,7 +3182,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.tandfonline.com/doi/abs/10.1080/17457289.2020.1824186?journalCode=fbep20"
             target="_blank"
@@ -3193,7 +3203,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.eods.eu/library/UNDP-Media_and_Elections_LR.pdf"
             target="_blank"
@@ -3214,7 +3224,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/sites/default/files/Monitoring-and-Mitigating-Electoral-Conflict.pdf "
             target="_blank"
@@ -3235,7 +3245,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.justiceinitiative.org/publications/monitoring-election-campaign-finance-handbook-ngos"
             target="_blank"
@@ -3256,7 +3266,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.tandfonline.com/doi/abs/10.1080/09540962.2020.1783084?journalCode=rpmm20"
             target="_blank"
@@ -3277,7 +3287,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://aceproject.org/today/feature-articles/out-of-country-voting-in-post-conflict-elections"
             target="_blank"
@@ -3298,7 +3308,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/out-country-voting-brief-overview-0 "
             target="_blank"
@@ -3319,7 +3329,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/overcoming-political-exclusion-strategies-marginalized-groups"
             target="_blank"
@@ -3341,7 +3351,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/parliamentary-elections-sri-lanka-during-covid-19-case-study-crisis-management"
             target="_blank"
@@ -3362,7 +3372,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://doi.org/10.1177/0010414010374021" target="_blank"
             >Perceptions of Electoral Fairness and Voter Turnout
             <i class="fa fa-external-link"></i
@@ -3381,7 +3391,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Election Security - Physical Security of Voting Locations and Election Facilities (cisa.gov)"
             target="_blank"
@@ -3402,7 +3412,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/political-participation-women-and-men-disabilities-tunisia-ifes-assessment "
             target="_blank"
@@ -3423,7 +3433,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ingentaconnect.com/contentone/cuny/cp/2016/00000048/00000003/art00007;jsessionid=281g5aekpi826.x-ic-live-03"
             target="_blank"
@@ -3445,7 +3455,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.undp.org/publications/preventing-violence-against-women-elections-programming-guide"
             target="_blank"
@@ -3466,7 +3476,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.usaid.gov/sites/default/files/2023-01/Primer-Cybersecurity-Election.pdf "
             target="_blank"
@@ -3487,7 +3497,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://m.knesset.gov.il/EN/activity/mmm/ProceduresforVotinginParliamentaryElectionsduringCovid.pdf"
             target="_blank"
@@ -3509,7 +3519,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.parlicentre.org/courses/cybersecurity"
             target="_blank"
@@ -3531,7 +3541,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://parlicentre.org/courses/management-of-electoral-processes"
             target="_blank"
@@ -3552,7 +3562,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.undp.org/publications/promoting-gender-equality-electoral-assistance"
             target="_blank"
@@ -3573,7 +3583,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="85ef4e5d-kaf-kacedda-report_2020_english.pdf (kofiannanfoundation.org)"
             target="_blank"
@@ -3596,7 +3606,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/protecting-politics-deterring-influence-organized-crime-elections?lang=en "
             target="_blank"
@@ -3617,7 +3627,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/protecting-politics-deterring-influence-organized-crime-elections?lang=en "
             target="_blank"
@@ -3638,7 +3648,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-923X.2004.00572.x"
             target="_blank"
@@ -3659,7 +3669,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://electionlab.mit.edu/articles/retaining-election-officials-secure-future-elections"
             target="_blank"
@@ -3680,7 +3690,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/risk-management-elections"
             target="_blank"
@@ -3701,7 +3711,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/risk-management-elections-guide-electoral-management-bodies"
             target="_blank"
@@ -3722,7 +3732,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/secure-and-fair-elections-safe-workshop-model-curriculum "
             target="_blank"
@@ -3743,7 +3753,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/social-media-disinformation-and-electoral-integrity "
             target="_blank"
@@ -3764,7 +3774,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/special-voting-arrangements-convenience-of-voting"
             target="_blank"
@@ -3785,7 +3795,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/strategic-planning-effective-electoral-management"
             target="_blank"
@@ -3807,7 +3817,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.eces.eu/en/posts/strategic-planning-for-electoral-management-bodies- "
             target="_blank"
@@ -3828,7 +3838,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="Strengthening the Resilience of Political Institutions and Processes: A Framework of Analysis | Connections: The Quarterly Journal (connections-qj.org)"
             target="_blank"
@@ -3850,7 +3860,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/sites/default/files/Systematic%20Methods%20for%20Advancing%20Election%20Observation_WAEON_EN.pdf"
             target="_blank"
@@ -3871,7 +3881,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.tandfonline.com/doi/full/10.1080/09546553.2017.1364636"
             target="_blank"
@@ -3892,7 +3902,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/effect-violence-womens-electoral-and-political-participation-bangladesh "
             target="_blank"
@@ -3913,7 +3923,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/the-election-officials-handbook-six-steps-local-officials-can-take-to-safeguard-americas-election-system"
             target="_blank"
@@ -3935,7 +3945,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://gcatoolkit.org/elections/ " target="_blank"
             >The GCA Cybersecurity Toolkit for Elections
             <i class="fa fa-external-link"></i
@@ -3954,7 +3964,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/news-media/multimedia-reports/impact-natural-hazards-elections"
             target="_blank"
@@ -3975,7 +3985,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://onlinelibrary.wiley.com/doi/full/10.1111/aspp.12416"
             target="_blank"
@@ -3996,7 +4006,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://onlinelibrary.wiley.com/doi/full/10.1111/aspp.12416"
             target="_blank"
@@ -4017,7 +4027,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="The Prevention and Mitigation of Election-related Violence (idea.int)"
             target="_blank"
@@ -4038,7 +4048,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="/https://dash.harvard.edu/bitstream/handle/1/27030113/The_Year_in_Elections_2015_pages.compressed.pdf?sequence=1&isAllowed=y"
             target="_blank"
@@ -4061,7 +4071,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.jstor.org/stable/24545572?seq=3" target="_blank"
             >Time to Kill: The Impact of Election Timing on Postconflict
             Stability <i class="fa fa-external-link"></i
@@ -4080,7 +4090,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="" target="_blank"
             >Towards a More Complete Understanding of Election Violence:
             Introducing a Gender Lens to Electoral Conflict Research
@@ -4100,7 +4110,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://securingdemocracy.gmfus.org/presidential-commission-on-election-resilience-and-trust"
             target="_blank"
@@ -4121,7 +4131,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/document/understanding-cybersecurity-throughout-electoral-process-reference-document-overview-cyber"
             target="_blank"
@@ -4142,7 +4152,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.usaid.gov/sites/default/files/2023-01/Understanding-Cybersecurity-Throughout-the-Electoral-Process_1.pdf "
             target="_blank"
@@ -4164,7 +4174,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://usaidlearninglab.org/resources/usaids-new-electoral-assessment-framework-blueprint-assessing-challenges-and"
             target="_blank"
@@ -4186,7 +4196,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://usaidlearninglab.org/resources/usaids-new-electoral-assessment-framework-blueprint-assessing-challenges-and"
             target="_blank"
@@ -4208,7 +4218,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://usaidlearninglab.org/resources/usaids-new-electoral-assessment-framework-blueprint-assessing-challenges-and"
             target="_blank"
@@ -4230,7 +4240,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://doi.org/10.1080/13510341003700253" target="_blank"
             >Using international law to assess elections
             <i class="fa fa-external-link"></i
@@ -4249,7 +4259,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://julkaisut.valtioneuvosto.fi/handle/10024/164457 "
             target="_blank"
@@ -4269,7 +4279,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/violence-against-women-elections-online-social-media-analysis-tool"
             target="_blank"
@@ -4290,7 +4300,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ifes.org/publications/violence-against-women-elections-framework"
             target="_blank"
@@ -4311,7 +4321,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/vote-buying"
             target="_blank"
@@ -4332,7 +4342,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/votes-without-violence-guide "
             target="_blank"
@@ -4354,7 +4364,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.ndi.org/votes-without-violence-guide "
             target="_blank"
@@ -4376,7 +4386,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.idea.int/publications/catalogue/voting-abroad-international-idea-handbook"
             target="_blank"
@@ -4397,7 +4407,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a href="https://www.eac.gov/voters/election-security" target="_blank"
             >Voting System Security Measures <i class="fa fa-external-link"></i
           ></a>
@@ -4415,7 +4425,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://electionjudgments.org/en/entity/4r1e4j8ly56?page=4"
             target="_blank"
@@ -4436,7 +4446,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://ueaeprints.uea.ac.uk/id/eprint/76320/1/Elections_and_emergencies_5.00_AAV_JAMES.pdf"
             target="_blank"
@@ -4458,7 +4468,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://books.google.se/books?hl=en&lr=&id=dzEZCgAAQBAJ&oi=fnd&pg=PR9&dq=%E2%80%98Election+administration+and+perceptions+of+fair+elections&ots=_OCqB6olKc&sig=6zbmnsStsvOOWCT6Tkspar47OGQ&redir_esc=y#v=onepage&q=%E2%80%98Election%20administration%20and%20perceptions%20of%20fair%20elections&f=false"
             target="_blank"
@@ -4478,7 +4488,7 @@
       </tr>
 
       <tr>
-        <td class="title" style="width: 50%">
+        <td class="title">
           <a
             href="https://www.youthpower.org/youth-inclusion-drg-toolkit"
             target="_blank"
@@ -4497,5 +4507,6 @@
         <td class="management">&#10060;</td>
       </tr>
     </table>
+</div>
   </body>
 </html>
